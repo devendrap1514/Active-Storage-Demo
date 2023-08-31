@@ -1,0 +1,18 @@
+current directory: /home/hp/dev/rails/demos/active-storage-demo/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/usr/share/rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/hp/dev/rails/demos/active-storage-demo/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230831-34942-nw5agc sitelibdir\=./.gem.20230831-34942-nw5agc clean
+
+current directory: /home/hp/dev/rails/demos/active-storage-demo/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230831-34942-nw5agc sitelibdir\=./.gem.20230831-34942-nw5agc
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/hp/dev/rails/demos/active-storage-demo/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230831-34942-nw5agc sitelibdir\=./.gem.20230831-34942-nw5agc install
+/usr/bin/install -m 0755 bootsnap.so ./.gem.20230831-34942-nw5agc/bootsnap
+
+current directory: /home/hp/dev/rails/demos/active-storage-demo/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230831-34942-nw5agc sitelibdir\=./.gem.20230831-34942-nw5agc clean
