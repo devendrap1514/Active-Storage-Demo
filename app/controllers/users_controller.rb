@@ -1,12 +1,16 @@
 class UsersController < ApplicationController
   protect_from_forgery
 
+  def index
+    user = User.all
+  end
+
   def create
     user = User.new(user_params)
     if user.save
       render json: user
     else
-      render json: { errors : user.errors.full_messages }
+      render json: { errors: user.errors.full_messages }
     end
   end
 
@@ -22,7 +26,8 @@ class UsersController < ApplicationController
   def update
     user = User.find_by_id(params[:id])
     if user
-      user.attach(user_params)
+      user.profile_picture.attach(user_params[:profile_picture])
+      render json: url_for(user.profile_picture)
     else
       render json: nil, status: :not_found
     end
@@ -31,10 +36,15 @@ class UsersController < ApplicationController
   def destroy
     user = User.find_by_id(params[:id])
     if user
-      render json: url_for(user.profile_picture)
+      user.destroy
+      render json: nil
     else
       render json: nil, status: :not_found
     end
+  end
+
+  def see_profile
+    @user = User.find_by_id(params[:id])
   end
 
   private

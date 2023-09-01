@@ -1,0 +1,9 @@
+<% if @user.profile_picture.attached? %>
+
+  <%= image_tag @user.profile_picture %>
+
+  <a href= <%= rails_blob_path(@user.profile_picture) %> >See</a>
+  <a href= <%= rails_blob_path(@user.profile_picture, disposition: "attachment") %> >Download</a>
+
+<% end %>
+
